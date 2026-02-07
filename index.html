@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Banyuwangi Catering - Ulfi Karomah (Nasi Kotak & Tumpeng)</title>
+        <title>Banyuwangi Catering - Ulfi Karomah</title>
         <meta
             name="description"
             content="Pesan Catering, Nasi Kotak, dan Tumpeng di Banyuwangi. Melayani acara syukuran, rapat, dan hampers. Halal, enak, dan cepat!"
         />
-        <link rel="stylesheet" href="./src/output.css" />
+        <script src="http://cdn.tailwindcss.com"></script>
+        <link rel="icon" href="image/Logo.png" type="image/png" />
 
         <link
             rel="stylesheet"
@@ -29,7 +30,9 @@
             <div
                 class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
             >
-                <a href="#" class="text-2xl font-bold text-green-600"
+                <a
+                    href="#"
+                    class="text-2xl text-stroke-2 font-bold text-green-600"
                     >Banyuwangi Catering</a
                 >
 
@@ -130,7 +133,7 @@
             <section id="produk" class="py-20 px-4">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-12" data-aos="fade-up">
-                        <h2 class="text-3xl font-bold mb-2">Produk Kami</h2>
+                        <h2 class="text-3xl font-bold mb-2">Produk <span class="text-green-600">Kami</span></h2>
                         <div class="h-1 w-20 bg-green-600 mx-auto"></div>
                     </div>
 
@@ -246,10 +249,12 @@
                         data-aos-delay="500"
                         class="w-full flex justify-center"
                     >
-                        <button onclick="telusuriBanyak()" class="bg-green-600 flex justify-center items-center p-4 text-white rounded-2xl">
-                            <span class="mr-1">Telusuri Lebih Banyak</span><i
-                                class="fas fa-arrow-right"
-                            ></i>
+                        <button
+                            onclick="telusuriBanyak()"
+                            class="bg-green-600 flex justify-center items-center p-4 text-white rounded-2xl"
+                        >
+                            <span class="mr-1">Telusuri Lebih Banyak</span
+                            ><i class="fas fa-arrow-right"></i>
                         </button>
                     </div>
                 </div>
@@ -308,18 +313,52 @@
                 </div>
             </section>
 
-            <section class="py-20 px-4 bg-white">
-                <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">
-                        Tentang Banyuwangi Catering
-                    </h2>
-                    <p class="text-slate-600 text-lg leading-relaxed">
-                        Dikelola oleh <strong>Ulfi Karomah</strong>, kami
-                        melayani aneka kebutuhan makanan untuk acara, gift, dan
-                        konsumsi harian di area Banyuwangi. Kami berkomitmen
-                        menyajikan hidangan dengan bahan berkualitas dan cita
-                        rasa otentik.
-                    </p>
+            <section class="py-16 md:py-24 px-6 bg-white overflow-hidden">
+                <div
+                    class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-20"
+                >
+                    <div
+                        class="w-full md:w-1/2 flex flex-col space-y-6 text-center md:text-left"
+                        data-aos="fade-up"
+                    >
+                        <h2
+                            class="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight"
+                        >
+                            Tentang
+                            <span class="text-green-600"
+                                >Banyuwangi Catering</span
+                            >
+                        </h2>
+
+                        <p
+                            class="text-slate-600 text-lg md:text-xl leading-relaxed"
+                        >
+                            Dikelola oleh
+                            <strong class="text-slate-900">Ulfi Karomah</strong
+                            >, kami melayani aneka kebutuhan makanan untuk
+                            acara, gift, dan konsumsi harian di area Banyuwangi.
+                            Kami berkomitmen menyajikan hidangan dengan bahan
+                            berkualitas dan cita rasa otentik.
+                        </p>
+                    </div>
+
+                    <div
+                        class="w-full md:w-1/2 flex justify-center items-center"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div class="relative w-full max-w-sm">
+                            <div
+                                class="absolute -inset-4 bg-green-50 rounded-full blur-3xl opacity-70"
+                            ></div>
+
+                            <img
+                                src="image/Logo.png"
+                                alt="Logo Banyuwangi Catering"
+                                class="relative z-10 w-full h-auto max-h-[350px] object-contain transition-transform duration-500 hover:scale-105"
+                            />
+                        </div>
+                    </div>
                 </div>
             </section>
 
