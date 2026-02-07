@@ -30,34 +30,33 @@
             <div
                 class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
             >
-                <a
-                    href="#"
-                    class="text-2xl text-stroke-2 font-bold text-green-600"
+                <a href="#" class="text-2xl font-bold text-orange-600"
                     >Banyuwangi Catering</a
                 >
 
                 <div class="hidden md:flex gap-8 items-center font-medium">
-                    <a href="#beranda" class="hover:text-green-600 transition"
+                    <a href="#beranda" class="hover:text-orange-600 transition"
                         >Beranda</a
                     >
-                    <a href="#produk" class="hover:text-green-600 transition"
+                    <a href="#produk" class="hover:text-orange-600 transition"
                         >Produk</a
                     >
                     <a
                         href="#cara-pesan"
-                        class="hover:text-green-600 transition"
+                        class="hover:text-orange-600 transition"
                         >Cara Pesan</a
                     >
-                    <a
-                        href="https://wa.me/6281252323997"
-                        class="bg-green-600 text-white px-5 py-2 rounded-full hover:bg-green-700 transition"
-                        >Pesan WhatsApp</a
+                    <button
+                        onclick="HubungiWa()"
+                        class="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition"
                     >
+                        Pesan WhatsApp
+                    </button>
                 </div>
 
                 <button
                     id="menu-btn"
-                    class="md:hidden text-2xl text-green-600"
+                    class="md:hidden text-2xl text-orange-600"
                     aria-label="Buka Menu Navigasi"
                 >
                     <i class="fas fa-bars"></i>
@@ -75,7 +74,7 @@
                 >
                 <a
                     href="https://wa.me/6281252323997"
-                    class="block bg-green-600 text-white text-center py-3 rounded-xl"
+                    class="block bg-orange-600 text-white text-center py-3 rounded-xl"
                     >Pesan WhatsApp</a
                 >
             </div>
@@ -84,12 +83,12 @@
         <main>
             <section
                 id="beranda"
-                class="pt-32 min-h-screen flex justify-center items-center pb-16 px-4 bg-gradient-to-b from-green-50 to-white"
+                class="pt-32 min-h-screen flex justify-center items-center pb-16 px-4 bg-gradient-to-b from-orange-50 to-white"
             >
                 <div class="max-w-6xl mx-auto text-center">
                     <span
                         data-aos="fade-up"
-                        class="inline-block bg-green-50 text-green-700 px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wide"
+                        class="inline-block bg-orange-100 text-orange-700 px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wide"
                         >Area Banyuwangi</span
                     >
                     <h1
@@ -97,27 +96,27 @@
                         data-aos-delay="200"
                         class="text-4xl md:text-6xl font-extrabold mt-6 mb-4 text-slate-900 leading-tight"
                     >
-                        Banyuwangi Catering <br class="hidden md:block" />
-                        Ulfi <span class="text-green-600">Karomah</span>
+                        Banyuwangi Catering – <br class="hidden md:block" />
+                        Ulfi <span class="text-orange-600">Karomah</span>
                     </h1>
                     <p
                         data-aos="fade-up"
                         data-aos-delay="400"
                         class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto"
                     >
-                        Tumpeng • Curry puff • Nastar • Suplemen
+                        Tumpeng • Curry puff • Nastar • Nasi Ayam bakar
                     </p>
                     <div
                         data-aos="fade-up"
                         data-aos-delay="600"
                         class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6"
                     >
-                        <a
-                            href="https://wa.me/6281252323997"
-                            class="w-full md:w-auto bg-green-600 text-white px-8 py-4 cursor-pointer rounded-2xl text-lg font-bold shadow-lg hover:bg-green-700 transition transform hover:-translate-y-1"
+                        <button
+                            onclick="HubungiWa()"
+                            class="w-full md:w-auto bg-orange-600 text-white px-8 py-4 cursor-pointer rounded-2xl text-lg font-bold shadow-lg hover:bg-orange-700 transition transform hover:-translate-y-1"
                         >
                             <i class="fab fa-whatsapp mr-2"></i> Pesan Sekarang
-                        </a>
+                        </button>
                     </div>
                     <p
                         data-aos="fade-up"
@@ -133,8 +132,10 @@
             <section id="produk" class="py-20 px-4">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-12" data-aos="fade-up">
-                        <h2 class="text-3xl font-bold mb-2">Produk <span class="text-green-600">Kami</span></h2>
-                        <div class="h-1 w-20 bg-green-600 mx-auto"></div>
+                        <h2 class="text-3xl font-bold mb-2">
+                            Produk <span class="text-orange-600">Kami</span>
+                        </h2>
+                        <div class="h-1 w-20 bg-orange-600 mx-auto"></div>
                     </div>
 
                     <div
@@ -160,7 +161,7 @@
                             </p>
                             <button
                                 onclick="pesanWA('Tumpeng')"
-                                class="block text-center w-full py-2 border-2 border-green-600 text-green-600 font-semibold rounded-lg hover:bg-green-600 hover:text-white transition"
+                                class="block text-center w-full py-2 border-2 border-orange-600 text-orange-600 font-semibold rounded-lg hover:bg-orange-600 hover:text-white transition"
                             >
                                 Pesan Sekarang
                             </button>
@@ -186,7 +187,7 @@
                             </p>
                             <button
                                 onclick="pesanWA('Curry Puff')"
-                                class="block text-center w-full py-2 border-2 border-green-600 text-green-600 font-semibold rounded-lg hover:bg-green-600 hover:text-white transition"
+                                class="block text-center w-full py-2 border-2 border-orange-600 text-orange-600 font-semibold rounded-lg hover:bg-orange-600 hover:text-white transition"
                             >
                                 Pesan Sekarang
                             </button>
@@ -212,7 +213,7 @@
                             </p>
                             <button
                                 onclick="pesanWA('Nastar')"
-                                class="block text-center w-full py-2 border-2 border-green-600 text-green-600 font-semibold rounded-lg hover:bg-green-600 hover:text-white transition"
+                                class="block text-center w-full py-2 border-2 border-orange-600 text-orange-600 font-semibold rounded-lg hover:bg-orange-600 hover:text-white transition"
                             >
                                 Pesan Sekarang
                             </button>
@@ -226,19 +227,22 @@
                             <div class="w-full h-[200px] mb-4">
                                 <img
                                     class="h-full w-full rounded-2xl object-cover"
-                                    src="image/Suplemen.png"
+                                    src="image/AyamBakar.png"
                                 />
                             </div>
-                            <h3 class="text-xl font-bold mb-2">Suplemen</h3>
+                            <h3 class="text-xl font-bold mb-2">
+                                Nasi Ayam Bakar
+                            </h3>
                             <p
                                 class="text-slate-600 mb-6 text-sm leading-relaxed"
                             >
-                                Menu hidangan bergizi yang diracik khusus untuk
-                                menjaga energi dan kesehatan Anda setiap hari
+                                Hidangan lezat kaya protein yang diolah higienis
+                                untuk menjaga energi dan produktivitas Anda
+                                setiap hari.
                             </p>
                             <button
-                                onclick="pesanWA('Suplemen')"
-                                class="block text-center w-full py-2 border-2 border-green-600 text-green-600 font-semibold rounded-lg hover:bg-green-600 hover:text-white transition"
+                                onclick="pesanWA('Nasi Ayam Bakar')"
+                                class="block text-center w-full py-2 border-2 border-orange-600 text-orange-600 font-semibold rounded-lg hover:bg-orange-600 hover:text-white transition"
                             >
                                 Pesan Sekarang
                             </button>
@@ -251,7 +255,7 @@
                     >
                         <button
                             onclick="telusuriBanyak()"
-                            class="bg-green-600 flex justify-center items-center p-4 text-white rounded-2xl"
+                            class="bg-orange-600 flex justify-center items-center p-4 text-white rounded-full"
                         >
                             <span class="mr-1">Telusuri Lebih Banyak</span
                             ><i class="fas fa-arrow-right"></i>
@@ -260,7 +264,7 @@
                 </div>
             </section>
 
-            <section id="cara-pesan" class="py-16 px-4 bg-green-600 text-white">
+            <section id="cara-pesan" class="py-16 px-4 bg-orange-600 text-white">
                 <div class="max-w-4xl mx-auto">
                     <h2
                         class="text-3xl font-bold mb-12 text-center text-white"
@@ -275,7 +279,7 @@
                             data-aos-delay="100"
                         >
                             <div
-                                class="w-12 h-12 bg-white text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl"
+                                class="w-12 h-12 bg-white text-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl"
                             >
                                 1
                             </div>
@@ -287,7 +291,7 @@
                             data-aos-delay="300"
                         >
                             <div
-                                class="w-12 h-12 bg-white text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl"
+                                class="w-12 h-12 bg-white text-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl"
                             >
                                 2
                             </div>
@@ -301,7 +305,7 @@
                             data-aos-delay="500"
                         >
                             <div
-                                class="w-12 h-12 bg-white text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl"
+                                class="w-12 h-12 bg-white text-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl"
                             >
                                 3
                             </div>
@@ -325,7 +329,7 @@
                             class="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight"
                         >
                             Tentang
-                            <span class="text-green-600"
+                            <span class="text-orange-600"
                                 >Banyuwangi Catering</span
                             >
                         </h2>
@@ -349,7 +353,7 @@
                     >
                         <div class="relative w-full max-w-sm">
                             <div
-                                class="absolute -inset-4 bg-green-50 rounded-full blur-3xl opacity-70"
+                                class="absolute -inset-4 bg-orange-50 rounded-full blur-3xl opacity-70"
                             ></div>
 
                             <img
@@ -365,18 +369,18 @@
             <section class="py-16 px-4">
                 <div
                     data-aos="flip-left"
-                    class="max-w-4xl mx-auto bg-green-50 border-2 border-dashed border-green-200 p-8 md:p-12 rounded-3xl text-center"
+                    class="max-w-4xl mx-auto bg-orange-50 border-2 border-dashed border-orange-200 p-8 md:p-12 rounded-3xl text-center"
                 >
                     <h2 class="text-2xl md:text-3xl font-bold mb-6">
                         Siap pesan hari ini?
                     </h2>
-                    <a
-                        href="https://wa.me/6281252323997"
-                        class="inline-block bg-green-600 text-white px-10 py-4 rounded-2xl text-xl font-bold shadow-lg hover:bg-green-700 transition"
+                    <button
+                        onclick="HubungiWa()"
+                        class="inline-block bg-orange-600 text-white px-10 py-4 rounded-2xl text-xl font-bold shadow-lg hover:bg-orange-700 transition"
                     >
                         <i class="fab fa-whatsapp mr-2"></i> Hubungi via
                         WhatsApp
-                    </a>
+                    </button>
                 </div>
             </section>
         </main>
